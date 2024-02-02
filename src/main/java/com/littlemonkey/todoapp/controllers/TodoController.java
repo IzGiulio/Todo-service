@@ -40,7 +40,7 @@ public class TodoController {
         }
     }
 
-    @PostMapping("/delete")
+    @DeleteMapping("/delete")
     public ResponseEntity<Object> deleteTodo(@RequestParam String id) {
         try {
             todoService.deleteTodo(Long.valueOf(id));
